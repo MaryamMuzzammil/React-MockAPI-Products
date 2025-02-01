@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-MockAPI-Products/static/css/main.2bdb7d6d.css",
+    "main.js": "/React-MockAPI-Products/static/js/main.095402b6.js",
+    "index.html": "/React-MockAPI-Products/index.html",
+    "main.2bdb7d6d.css.map": "/React-MockAPI-Products/static/css/main.2bdb7d6d.css.map",
+    "main.095402b6.js.map": "/React-MockAPI-Products/static/js/main.095402b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bdb7d6d.css",
+    "static/js/main.095402b6.js"
+  ]
+}
