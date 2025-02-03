@@ -3,7 +3,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import Loader from "./loader";
 import { Link, useParams } from "react-router-dom";
-import { ToastContainer , toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 
 const ProductList = () => {
@@ -33,10 +33,13 @@ const ProductList = () => {
             catch (error) {
                 console.log(error);
                 setLoading(false);
-                const { data } = error.response;
-                console.log(data)
-                setErrorMsg(data)
-
+                
+                // Check if error.response exists before destructuring
+                if (error.response) {
+                    setErrorMsg(error.response.data || "An error occurred while fetching data.");
+                } else {
+                    setErrorMsg("Network error or server is down. Please try again later.");
+                }
             }
 
         }
